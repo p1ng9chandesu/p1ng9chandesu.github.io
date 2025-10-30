@@ -1,0 +1,31 @@
+/* = = = = = = = = = = CURRENT  = = = = = = = = = = = = */
+:root {
+    --accent:       #9ceafe;    /* accent     */
+    --accent-dark:  #4a6b82;    /* accent 2   */
+    --main:         #c88ddd;    /* main color */
+    --main-dim:     #e2c3ed;    /* dimmed version of main color */
+    --text:         #231f26;
+    --grey1:        #5a5560; 
+    --grey2:        #8b8493; 
+    --grey3:        #bfb9c5; 
+    --grey4:        #e5e1e9; 
+    --grey5:        #f6f4f8;
+    --background:   #ffffff;
+    --shadow:       rgba(35, 31, 38, 0.15);
+}
+
+/* DARK MODE colder */
+html[data-theme="dark"]  {
+    --accent:       #9ceafe;    /* accent     */
+    --accent-dark:  #4a6b82;    /* accent 2   */
+    --main:         #c88ddd;    /* main color */
+    --main-dim:     #3a2d42;    /* dimmed version of main color */
+    --text:         #CBCCCD;
+    --grey1:        #f6f4f8; 
+    --grey2:        #bfb9c5; 
+    --grey3:        #7e7887; 
+    --grey4:        #3d4554; 
+    --grey5:        #252d39;
+    --background:   #1e2631;
+    --shadow:      rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,35 @@
+{% include calculate_relative_base.html %}
+{% include escape-404.html %}
+
+<link id="favicon" rel="icon" href="{{ relativebase }}assets/img/favicon/favicon.ico" type="image/x-icon">
+<link id="apple-touch-icon" rel="apple-touch-icon" href="{{ relativebase }}assets/img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ relativebase }}assets/img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ relativebase }}assets/img/favicon/favicon.ico">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let fileName = "";
+    // let fileName = "favicon-2colors.ico";
+
+    if (!fileName) {
+      const today = new Date();
+      const month = today.getMonth() + 1;
+      const day = today.getDate();
+
+      if (month == 1 && day == 1) { fileName = "favicon-winter.ico"; }
+      else if (month == 4 && day == 11) { fileName = "favicon-karina.ico"; }
+      else if (month == 9 && day == 25) { fileName = "favicon-superp1ng9.ico"; }
+      else if (month == 10 && day == 23) { fileName = "favicon-ningning.ico"; }
+      else if (month == 10 && day == 30) { fileName = "favicon-giselle.ico"; }
+      else if (month == 11 && day == 17) { fileName = "favicon-aespa.ico"; }
+    }
+
+    if (!fileName) { return; }
+
+    const relativeBase = "{{ relativebase }}";
+    const newPath = relativeBase + "assets/img/favicon/" + fileName + "?v=" + new Date().getTime();
+
+    document.getElementById("favicon").setAttribute("href", newPath);
+    document.getElementById("apple-touch-icon").setAttribute("href", newPath);
+  });
+</script>
