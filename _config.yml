@@ -116,8 +116,8 @@ author:
   name             : "p1ng9"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "My guardian Angel #48"
-  location         : "Somewhere"
-  email            :
+  location         : "Kwangya"
+  email            : p1ng9chandesu@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -159,7 +159,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2020"
 
 
 # Reading Files
