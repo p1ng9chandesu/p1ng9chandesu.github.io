@@ -10,7 +10,10 @@
 {% assign favicon_base = "favicon-default" %}
 
 <!-- 특정 날짜마다 파비콘 변경 -->
-{% if current_month == 4 and current_day == 11 %}
+{% if current_month == 11 and current_day == 17 %}
+{% assign favicon_base = "favicon-aespa" %}
+
+{% elsif current_month == 4 and current_day == 11 %}
 {% assign favicon_base = "favicon-karina" %}
 
 {% elsif current_month == 10 and current_day == 30 %}
