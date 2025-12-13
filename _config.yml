@@ -19,7 +19,6 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Uchinaga P1ng9"
 title_separator          : "-"
-favicon                  : /assets/images/favicon.png
 subtitle                 : "noot noot" # site tagline that appears below site title in masthead
 name                     : "p1ng9"
 description              : "My guardian Angel #48"
