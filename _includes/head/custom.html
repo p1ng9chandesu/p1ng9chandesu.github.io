@@ -7,27 +7,27 @@
 {% assign current_day = site.time | date: "%d" | times: 1 %}
 
 <!-- 기본 파비콘 설정 -->
-{% assign favicon_base = "/assets/images/favicon-default" %}
+{% assign favicon_base = "favicon-default" %}
 
 <!-- 특정 날짜마다 파비콘 변경 -->
 {% if current_month == 4 and current_day == 11 %}
-{% assign favicon_base = "/assets/images/favicon-karina" %}
+{% assign favicon_base = "favicon-karina" %}
 
 {% elsif current_month == 10 and current_day == 30 %}
-{% assign favicon_base = "/assets/images/favicon-giselle" %}
+{% assign favicon_base = "favicon-giselle" %}
 
 {% elsif current_month == 1 and current_day == 1 %}
-{% assign favicon_base = "/assets/images/favicon-winter" %}
+{% assign favicon_base = "favicon-winter" %}
 
 {% elsif current_month == 10 and current_day == 23 %}
-{% assign favicon_base = "/assets/images/favicon-ninging" %}
+{% assign favicon_base = "favicon-ninging" %}
 
 {% endif %}
 
-<link rel="icon" type="image/png" href="{{favicon_base}}.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="{{favicon_base}}.png" />
-<link rel="shortcut icon" href="{{favicon_base}}.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{favicon_base}}.png" />
+<link rel="icon" type="image/png" href="/assets/images/{{favicon_base}}.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/{{favicon_base}}.png" />
+<link rel="shortcut icon" href="/assets/images/{{favicon_base}}.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/{{favicon_base}}.png" />
 <link rel="manifest" href="/site.webmanifest" />
 
 <!-- end custom head snippets -->
