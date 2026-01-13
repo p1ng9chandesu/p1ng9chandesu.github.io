@@ -2,14 +2,35 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
-<!-- 날짜 가져오기 -->
+<link id="favicon" rel="icon" href="/assets/images/favicon/{{favicon_base}}.png">
+
+<script>
+    (function () {
+        const date = new Date();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        let name = "";
+
+        if (month === 9 && day === 25) name = "superp1ng9";
+        else if (month === 11 && day === 17) name = "aespa";
+        else if (month === 4 && day === 11) name = "karina";
+        else if (month === 10 && day === 30) name = "giselle";
+        else if (month === 1 && day === 1) name = "winter";
+        else if (month === 10 && day === 23) name = "ninging";
+
+        if (name) { document.getElementById('favicon').href = `/assets/images/favicon/${name}.png`; }
+    })();
+</script>
+
+<!-- 
+날짜 가져오기
 {% assign current_month = site.time | date: "%m" | times: 1 %}
 {% assign current_day = site.time | date: "%d" | times: 1 %}
 
-<!-- 기본 파비콘 설정 -->
+기본 파비콘 설정
 {% assign favicon_base = "default" %}
 
-<!-- 특정 날짜마다 파비콘 변경 -->
+특정 날짜마다 파비콘 변경 
 {% if current_month == 11 and current_day == 17 %}
 {% assign favicon_base = "aespa" %}
 
@@ -31,6 +52,7 @@
 <link rel="icon" type="image/png" href="/assets/images/favicon/{{favicon_base}}.png" />
 <link rel="shortcut icon" href="/assets/images/favicon/{{favicon_base}}.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/{{favicon_base}}.png" />
-<link rel="manifest" href="/site.webmanifest" />
+<link rel="manifest" href="/site.webmanifest" /> 
+-->
 
 <!-- end custom head snippets -->
