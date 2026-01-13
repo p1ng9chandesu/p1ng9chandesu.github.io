@@ -1,11 +1,13 @@
 # main links
 main:
   - title: "aespa"
-    url : https://github.com/p1ng9chandesu
+    url : /aespa/
   - title: "keyboard"
-    url : https://github.com/p1ng9chandesu
+    url : /keyboard/
   - title: "life"
-    url : https://github.com/p1ng9chandesu
+    url : /life/
+  - title: "review"
+    url : /review/
 
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
