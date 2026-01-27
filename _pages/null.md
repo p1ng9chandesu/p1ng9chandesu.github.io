@@ -1,6 +1,6 @@
 ---
-title: "review"
+title: ""
 layout: categories
-permalink: /review/
+permalink: //
 author_profile: true
 ---
